@@ -1,2 +1,2 @@
 # bofletcher.com
-Repo for bofletcher.com
+Repository for bofletcher.com
