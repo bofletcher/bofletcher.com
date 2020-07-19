@@ -1,8 +1,16 @@
 import React from "react";
-import styles from './Menu.module.css'
-import { Link } from "react-router-dom"
-import windowsStartIcon from "./windows-start-btn-icon.png"
-import windowsSoundIcon from "./windows-sound-icon.png"
+import styles from './Menu.module.css';
+import { Link } from "react-router-dom";
+import windowsStartIcon from "./windows-start-btn-icon.png";
+import windowsSoundIcon from "./windows-sound-icon.png";
+import windowsProjectsIcon from "./windows-projects-icon.png";
+import windowsMenuArrow from "./windows-menu-arrow.png"
+import windowsFileIcon from "./windows-file-icon.png"
+import windowsResumeIcon from "./windows-resume-icon.png"
+import windowsAboutIcon from "./windows-about-icon.png"
+import windowsPhoneIcon from "./windows-phone-icon.png"
+import windowsCDIcon from "./windows-95-cd-icon.png"
+import windowsShutdownIcon from "./windows-shutdown-icon.png"
  
 const Menu = () => (
   /*
@@ -19,6 +27,68 @@ const Menu = () => (
     </ul>
   </header>
   */
+ <div>
+   <div className={styles.startMenu}>
+    <div className={styles.startMenuWrapper}>
+      <div className={styles.startMenuSideTextWRow}>
+        <div className={styles.startMenuSideTextWRowCol}>
+          <div className={styles.startMenuSideTextWrapper}>
+            <div className={styles.win95Txt}>Windows</div>
+            <div className={styles.win95Txt95}><strong className={styles.win95}>95</strong></div>
+
+          </div>
+
+        </div>
+        <div className={styles.startMenuOptionsColumn}>
+        <Link to="/projects">
+          <div className={styles.startMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsProjectsIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>P</span>rojects</div>
+              <img className={styles.menuArrow} src={windowsMenuArrow} alt="windows-menu-arrow"/>
+          </div>
+          </Link>
+          <Link to="/resume">
+          <div className={styles.startMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsResumeIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>R</span>esume</div>
+              
+          </div>
+          </Link>
+          <div className={styles.startMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsAboutIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>A</span>bout</div>
+              
+          </div>
+          <Link to="/contact">
+          <div className={styles.startMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsPhoneIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>C</span>ontact</div>
+              
+          </div>
+          </Link>
+          <Link to="/">
+          <div className={styles.startMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsFileIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>P</span>rojects</div>
+              
+          </div>
+          </Link>
+          <Link to="/">
+          <div className={styles.startMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsCDIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>H</span>ome</div>
+              
+          </div>
+          </Link>
+          <div className={styles.shutdownMenuOption}>
+              <img className={styles.windowsProjectIcon} src={windowsShutdownIcon} alt="windows-projects-icon"/>
+              <div className={styles.startMenuOptionText}>Shutdown...</div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
 
   <div className={styles.startBar}>
     <div className={styles.startBtn}>
@@ -28,11 +98,13 @@ const Menu = () => (
     <div className={styles.clock}>
       <div className={styles.clockWrapper}>
         <img className={styles.clockIcon} src={windowsSoundIcon} alt=""/>
-        </div>
         <div className={styles.clockText}>
             3:33
         </div>
+        </div>
+
       </div>
+  </div>
   </div>
 
 )
