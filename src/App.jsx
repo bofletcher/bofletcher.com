@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Draggable, {DraggableCore} from 'react-draggable';
 import './App.css';
 import Menu from './components/Menu/Menu';
 import Home from './components/Pages/Home/Home'
@@ -27,6 +28,7 @@ class App extends Component {
     <Router basename="/" >
         <div className="Desktop">
           <DesktopIcons />
+          <Draggable>
             <div className="window95">
               <div className="windowTopbar">PAGE NAME</div>
               <div className="windowBody">
@@ -39,6 +41,7 @@ class App extends Component {
                   </Switch>
                 </div>
             </div>
+            </Draggable>
             <Menu open ={this.state.menuOpen} click={this.menuToggle}/>
         </div>
     </Router>   
