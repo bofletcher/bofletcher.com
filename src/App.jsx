@@ -27,6 +27,7 @@ class App extends Component {
     <Router basename="/" >
         <div className="Desktop">
           <DesktopIcons />
+            <div className="window95">
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
@@ -34,6 +35,7 @@ class App extends Component {
               <Route path="/resume" exact component={Resume}/>
               <Route path="/contact" exact component={Contact} />
             </Switch>
+            </div>
             <Menu open ={this.state.menuOpen} click={this.menuToggle}/>
         </div>
     </Router>   

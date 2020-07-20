@@ -15,3 +15,11 @@ body {
   flex-direction: column;
   height: calc(100vh - 35px);
 }
+
+.window95 {
+  position: absolute;
+  z-index: 3;
+  height: 75%;
+  width: 80%;
+  
+}
