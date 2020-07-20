@@ -28,13 +28,16 @@ class App extends Component {
         <div className="Desktop">
           <DesktopIcons />
             <div className="window95">
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about" exact component={About} />
-              <Route path="/projects" exact component={Projects} />
-              <Route path="/resume" exact component={Resume}/>
-              <Route path="/contact" exact component={Contact} />
-            </Switch>
+              <div className="windowTopbar">PAGE NAME</div>
+              <div className="windowBody">
+                  <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/projects" exact component={Projects} />
+                    <Route path="/resume" exact component={Resume}/>
+                    <Route path="/contact" exact component={Contact} />
+                  </Switch>
+                </div>
             </div>
             <Menu open ={this.state.menuOpen} click={this.menuToggle}/>
         </div>

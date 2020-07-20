@@ -17,9 +17,38 @@ body {
 }
 
 .window95 {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: 3;
   height: 75%;
-  width: 80%;
-  
+  width: 70%;
+  padding-top: 4px;
+  background-color: #bdbdbd;
+  border-style: solid;
+  border-width: 2px 2px 2px 1px;
+  border-color: #dfdfdf #4b4b4b #4b4b4b #dfdfdf;
+  font-family: source-code-pro,monospace;
+}
+
+.windowTopbar {
+  margin: 0 4px;
+  padding: 3px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #04008a;
+}
+
+.windowBody {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: white;
+  margin: 4px;
+  border-style: solid;
+    border-width: 2px;
+    border-color: #7c7c7c #fff #fff #7c7c7c;
 }
