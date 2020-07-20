@@ -1,5 +1,12 @@
+.Open {
+  display: block;
+}
+
+.Close {
+  display: none;
+}
+
 .startMenu {
-display: block;
 position: relative;
 z-index: 3;
 overflow: visible;

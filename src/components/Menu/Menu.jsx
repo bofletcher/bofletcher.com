@@ -12,7 +12,7 @@ import windowsPhoneIcon from "./windows-phone-icon.png"
 import windowsCDIcon from "./windows-95-cd-icon.png"
 import windowsShutdownIcon from "./windows-shutdown-icon.png"
  
-const Menu = () => (
+const Menu = (props) => {
   /*
   <header className={styles.startMenu}>
     <div className={styles.windowsTopbar}>
@@ -27,8 +27,16 @@ const Menu = () => (
     </ul>
   </header>
   */
+
+  let attachedStyles = [styles.startMenu, styles.Close];
+  if (props.open) {
+    attachedStyles = [styles.startMenu, styles.Open]
+  }
+
+  return(
+
  <div>
-   <div className={styles.startMenu}>
+   <div className={attachedStyles.join(' ')}>
     <div className={styles.startMenuWrapper}>
       <div className={styles.startMenuSideTextWRow}>
         <div className={styles.startMenuSideTextWRowCol}>
@@ -69,7 +77,7 @@ const Menu = () => (
           <Link to="/">
           <div className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsFileIcon} alt="windows-projects-icon"/>
-              <div className={styles.startMenuOptionText}><span className={styles.underline}>P</span>rojects</div>
+              <div className={styles.startMenuOptionText}><span className={styles.underline}>G</span>ithub</div>
               
           </div>
           </Link>
@@ -93,7 +101,7 @@ const Menu = () => (
   <div className={styles.startBar}>
     <div className={styles.startBtn}>
       <img className={styles.startBtnImg} src={windowsStartIcon} alt="start-btn-img"/>
-      <div className={styles.startBtnText}>Start</div>
+      <div onClick={props.click} className={styles.startBtnText}>Start</div>
     </div>
     <div className={styles.clock}>
       <div className={styles.clockWrapper}>
@@ -106,7 +114,8 @@ const Menu = () => (
       </div>
   </div>
   </div>
+  )
 
-)
+  }
 
 export default Menu;
