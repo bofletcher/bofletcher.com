@@ -99,9 +99,9 @@ const Menu = (props) => {
    </div>
 
   <div className={styles.startBar}>
-    <div className={styles.startBtn}>
+    <div className={styles.startBtn} onClick={props.click}>
       <img className={styles.startBtnImg} src={windowsStartIcon} alt="start-btn-img"/>
-      <div onClick={props.click} className={styles.startBtnText}>Start</div>
+      <div className={styles.startBtnText}>Start</div>
     </div>
     <div className={styles.clock}>
       <div className={styles.clockWrapper}>
