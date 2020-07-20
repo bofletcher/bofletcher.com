@@ -1,0 +1,39 @@
+.desktopIconsColumn {
+  display: block;
+  top: 5px;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 27px;
+  width: 16.66666667%;
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-right: 10px;
+}
+
+.desktopIconWrapper {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 13.5vh;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.iconImage {
+  width: auto;
+  height: 50px;
+  /*margin-bottom: 8px;*/
+}
+
+.desktopIconLabel {
+  font-family:Arial, sans-serif;
+  width: 100px;
+  padding-bottom: 0px;
+  color: #fff;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: none !important;
+}

@@ -62,11 +62,13 @@ const Menu = (props) => {
               
           </div>
           </Link>
+          <Link to="/about">
           <div className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsAboutIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>A</span>bout</div>
               
           </div>
+          </Link>
           <Link to="/contact">
           <div className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsPhoneIcon} alt="windows-projects-icon"/>

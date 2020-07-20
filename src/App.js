@@ -6,6 +6,7 @@ import About from './components/Pages/About/About';
 import Projects from './components/Pages/Projects/Projects';
 import Resume from './components/Pages/Resume/Resume';
 import Contact from './components/Pages/Contact/Contact';
+import DesktopIcons from './components/DesktopIcons/DesktopIcons'
 
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
@@ -25,6 +26,7 @@ class App extends Component {
   return (
     <Router basename="/" >
         <div className="Desktop">
+          <DesktopIcons />
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
