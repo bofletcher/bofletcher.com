@@ -25,19 +25,21 @@ bottom: 35px;
 }
 
 .startMenuWrapper {
+  user-select: none;
   opacity: 1;
-    transition: opacity 2ms ease-in 0s;
-    display: block;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    width: 300px;
-    height: 100%;
-    border-style: solid;
-    border-width: 2px 2px 2px 1px;
-    border-color: #dfdfdf #4b4b4b #4b4b4b #dfdfdf;
+  transition: opacity 2ms ease-in 0s;
+  display: block;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 100%;
+  border-style: solid;
+  border-width: 2px 2px 2px 1px;
+  border-color: #dfdfdf #4b4b4b #4b4b4b #dfdfdf;
 }
+
 .startMenuSideTextWRow {
   display: block;
   position: relative;
@@ -140,6 +142,11 @@ bottom: 35px;
   color: #333;
 }
 
+.startMenuOption:hover {
+  background-color: #04008a;
+  color: white;
+}
+
 
 .windowsProjectIcon {
   width: 41px;
@@ -177,9 +184,15 @@ bottom: 35px;
   cursor: pointer;
 }
 
+.shutdownMenuOption:hover {
+  background-color: #04008a;
+  color: white;
+}
+
 /*---------------------------------------------------------------------------------------------*/
 
 .startBar {
+  user-select: none;
   height: 35px;
   width: 100%;
   margin-top: 0px;
@@ -196,6 +209,7 @@ bottom: 35px;
 }
 
 .startBtn {
+  user-select: none;
   border-bottom-color:rgb(75, 75, 75);
   border-bottom-style:solid;
   border-bottom-width:2px;
@@ -223,6 +237,10 @@ bottom: 35px;
   top:3px;
   width:90px;
   -webkit-box-direction:normal;
+}
+
+.startBtn:hover {
+  background-color: #a8a8a8;
 }
 
 .startBtnImg {

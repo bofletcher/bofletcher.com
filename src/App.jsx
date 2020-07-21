@@ -8,7 +8,7 @@ import Projects from './components/Pages/Projects/Projects';
 import Resume from './components/Pages/Resume/Resume';
 import Contact from './components/Pages/Contact/Contact';
 import DesktopIcons from './components/DesktopIcons/DesktopIcons'
-import closeBtn from './images/close.svg'
+
 
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
@@ -53,7 +53,7 @@ class App extends Component {
           <DesktopIcons openWindow ={this.windowOpen} />
           <Draggable>
             <div className={attachedStyles.join(' ')}>
-              <div className={styles.windowTopbar}>PAGE NAME <div onClick={this.windowClose} className={styles.closeBtn}><img src={closeBtn} alt="close-btn" height="12" width="12"/></div></div>
+              <div className={styles.windowTopbar}>PAGE NAME <div onClick={this.windowClose} className={styles.closeBtn}>X</div></div>
               <div className={styles.windowBody}>
                   <Switch>
                     <Route path="/" exact component={Home} />
