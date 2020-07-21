@@ -44,8 +44,8 @@ function DesktopIcons(props) {
           </div>
         </div> 
         </Link>
-        <Link to="/">
-        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
+        <Link to="//github.com/bofletcher" target="_blank">
+        <div className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsFileIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Github

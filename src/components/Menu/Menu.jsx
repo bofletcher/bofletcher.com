@@ -76,8 +76,8 @@ const Menu = (props) => {
               
           </div>
           </Link>
-          <Link to="/">
-          <div onClick={props.openWindow} className={styles.startMenuOption}>
+          <Link to="//github.com/bofletcher" target="_blank">
+          <div className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsFileIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>G</span>ithub</div>
               
