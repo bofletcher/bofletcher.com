@@ -9,11 +9,11 @@ import windowsAboutIcon from "../Menu/windows-about-icon.png"
 import windowsPhoneIcon from "../Menu/windows-phone-icon.png"
 
 
-function DesktopIcons() {
+function DesktopIcons(props) {
   return (
     <div className={styles.desktopIconsColumn}>
         <Link to="/projects">
-        <div className={styles.desktopIconWrapper}>
+        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsProjectsIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Projects
@@ -21,7 +21,7 @@ function DesktopIcons() {
         </div>
         </Link>
         <Link to="/resume">
-        <div className={styles.desktopIconWrapper}>
+        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsResumeIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Resume
@@ -29,7 +29,7 @@ function DesktopIcons() {
         </div>
         </Link>
         <Link to="/about">
-        <div className={styles.desktopIconWrapper}>
+        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsAboutIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             About
@@ -37,7 +37,7 @@ function DesktopIcons() {
         </div>
         </Link>
         <Link to="/contact">
-        <div className={styles.desktopIconWrapper}>
+        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsPhoneIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Contact
@@ -45,7 +45,7 @@ function DesktopIcons() {
         </div> 
         </Link>
         <Link to="/">
-        <div className={styles.desktopIconWrapper}>
+        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsFileIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Github

@@ -50,6 +50,23 @@ body {
   background-color: white;
   margin: 4px;
   border-style: solid;
-    border-width: 2px;
-    border-color: #7c7c7c #fff #fff #7c7c7c;
+  border-width: 2px;
+  border-color: #7c7c7c #fff #fff #7c7c7c;
+}
+
+.closeBtn {
+  background-color: #bdbdbd;
+  border-style: solid;
+  border-width: 2px 2px 2px 1px;
+  border-color: #dfdfdf #4b4b4b #4b4b4b #dfdfdf;
+  height: 18px;
+  width: 18px;
+}
+
+.windowOpen {
+  display: flex;
+}
+
+.windowClosed {
+  display: none;
 }
