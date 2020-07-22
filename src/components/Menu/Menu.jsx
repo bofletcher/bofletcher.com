@@ -34,7 +34,23 @@ const Menu = (props) => {
     attachedStyles = [styles.startMenu, styles.Open]
   }
 
-  let curTime = moment().format("h:mm");
+
+
+  // let updateTime = function() {
+  //   document.querySelector('clock').innerHTML =
+  //   <h1>{moment().format("h:mm")}</h1>
+  // }
+
+
+  let curTime = moment().format("h:mm");;
+
+  // function displayTime() {
+  //   curTime = moment().format("h:mm");
+  //   setTimeout(curTime, 1000);
+  //   return curTime;
+  // }
+
+
 
   return(
 
@@ -111,7 +127,7 @@ const Menu = (props) => {
     <div className={styles.clock}>
       <div className={styles.clockWrapper}>
         <img className={styles.clockIcon} src={windowsSoundIcon} alt=""/>
-        <div className={styles.clockText}>
+        <div className={styles.clockText} id="clock">
             {curTime}
         </div>
         </div>

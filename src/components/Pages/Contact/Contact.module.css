@@ -4,3 +4,15 @@
   background-color: #ffffff;
   background-image: url(../windows-95-texture.webp);
 }
+
+.contactPageBody {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
