@@ -315,7 +315,7 @@ bottom: 35px;
     font-family: Arial,sans-serif;
     font-size: 14px;
     line-height: 20px;
-    width: 8.3%;
+    width: 90px;
 }
 
 .clockWrapper {
@@ -339,7 +339,7 @@ bottom: 35px;
   left: 2px;
   top: -1px;
   display: inline;
-  margin-left: 19px;
+  margin-left: 10px;
   color: #000;
 }
 

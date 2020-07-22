@@ -1,0 +1,6 @@
+.projectPage {
+  display: flex;
+  flex-grow: 1;
+  background-color: #ffffff;
+  background-image: url(../windows-95-texture.webp);
+}

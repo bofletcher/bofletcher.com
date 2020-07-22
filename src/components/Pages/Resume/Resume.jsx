@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./Resume.module.css";
 
 
 function Resume() {
   return (
-    <div>
+    <div className={styles.resumePage}>
         RESUME
     </div>
   )
