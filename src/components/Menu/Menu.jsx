@@ -68,27 +68,27 @@ const Menu = (props) => {
         </div>
         <div className={styles.startMenuOptionsColumn}>
         <Link to="/projects">
-          <div onClick={props.openWindow} className={styles.startMenuOption}>
+          <div onClick={()=> props.openWindow('PROJECTS')} className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsProjectsIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>P</span>rojects</div>
               <img className={styles.menuArrow} src={windowsMenuArrow} alt="windows-menu-arrow"/>
           </div>
           </Link>
           <Link to="/resume">
-          <div onClick={props.openWindow} className={styles.startMenuOption}>
+          <div onClick={()=> props.openWindow('RESUME')} className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsResumeIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>R</span>esume</div>
               
           </div>
           </Link>
           <Link to="/about">
-          <div onClick={props.openWindow} className={styles.startMenuOption}>
+          <div onClick={()=> props.openWindow('ABOUT')} className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsAboutIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>A</span>bout</div>
               
           </div>
           </Link>
-          <Link onClick={props.openWindow} to="/contact">
+          <Link onClick={()=> props.openWindow('CONTACT')} to="/contact">
           <div className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsPhoneIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>C</span>ontact</div>

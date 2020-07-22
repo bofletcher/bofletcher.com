@@ -16,7 +16,8 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 class App extends Component {
   state = {
     menuOpen: false,
-    windowOpen: false
+    windowOpen: false,
+    currentPage: ""
   }
 
   menuToggle = () => {
@@ -31,9 +32,10 @@ class App extends Component {
     })
   }
 
-  windowOpen = () => {
+  windowOpen = (pageName) => {
     this.setState({
-      windowOpen: true
+      windowOpen: true,
+      currentPage: pageName
     })
   }
 
@@ -53,7 +55,7 @@ class App extends Component {
           <DesktopIcons openWindow ={this.windowOpen} />
           <Draggable>
             <div className={attachedStyles.join(' ')}>
-              <div className={styles.windowTopbar}>PAGE NAME <div onClick={this.windowClose} className={styles.closeBtn}>X</div></div>
+              <div className={styles.windowTopbar}> {this.state.currentPage} <div onClick={this.windowClose} className={styles.closeBtn}>X</div></div>
               <div className={styles.windowBody}>
                   <Switch>
                     <Route path="/" exact component={Home} />

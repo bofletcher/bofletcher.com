@@ -13,7 +13,7 @@ function DesktopIcons(props) {
   return (
     <div className={styles.desktopIconsColumn}>
         <Link to="/projects">
-        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
+        <div onClick={()=> props.openWindow('PROJECTS')} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsProjectsIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Projects
@@ -21,7 +21,7 @@ function DesktopIcons(props) {
         </div>
         </Link>
         <Link to="/resume">
-        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
+        <div onClick={()=> props.openWindow('RESUME')} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsResumeIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Resume
@@ -29,7 +29,7 @@ function DesktopIcons(props) {
         </div>
         </Link>
         <Link to="/about">
-        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
+        <div onClick={()=> props.openWindow('ABOUT')} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsAboutIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             About
@@ -37,7 +37,7 @@ function DesktopIcons(props) {
         </div>
         </Link>
         <Link to="/contact">
-        <div onClick={props.openWindow} className={styles.desktopIconWrapper}>
+        <div onClick={()=> props.openWindow('CONTACT')} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsPhoneIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Contact
