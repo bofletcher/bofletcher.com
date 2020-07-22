@@ -3,4 +3,10 @@
   flex-grow: 1;
   background-color: #ffffff;
   background-image: url(../windows-95-texture.webp);
+  padding: .5em;
+}
+
+.aboutMeTextContainer{
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }

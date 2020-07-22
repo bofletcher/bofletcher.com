@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Menu.module.css';
 import { Link } from "react-router-dom";
+import moment from 'moment'
 import windowsStartIcon from "./windows-start-btn-icon.png";
 import windowsSoundIcon from "./windows-sound-icon.png";
 import windowsProjectsIcon from "./windows-projects-icon.png";
@@ -32,6 +33,8 @@ const Menu = (props) => {
   if (props.open) {
     attachedStyles = [styles.startMenu, styles.Open]
   }
+
+  let curTime = moment().format("h:mm");
 
   return(
 
@@ -109,7 +112,7 @@ const Menu = (props) => {
       <div className={styles.clockWrapper}>
         <img className={styles.clockIcon} src={windowsSoundIcon} alt=""/>
         <div className={styles.clockText}>
-            3:33
+            {curTime}
         </div>
         </div>
 
