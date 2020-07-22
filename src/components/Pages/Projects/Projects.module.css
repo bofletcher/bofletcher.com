@@ -4,3 +4,18 @@
   background-color: #ffffff;
   background-image: url(../windows-95-texture.webp);
 }
+
+.projectPageBody {
+  padding: .5em;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+
+}
