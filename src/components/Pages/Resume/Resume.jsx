@@ -7,8 +7,10 @@ import ResumePic from "../Resume/Resume Pic.png"
 function Resume() {
   return (
     <div className={styles.resumePage}>
-        <a href={BosResume} download> Download My Resume </a>
         <img  className={styles.resumeImg} src={ResumePic} alt="resume-pic"/>
+        <div className={styles.downloadLinkDiv}>
+        <a className={styles.downloadLink} href={BosResume} download> Download My Resume </a>
+        </div>
     </div>
   )
 }

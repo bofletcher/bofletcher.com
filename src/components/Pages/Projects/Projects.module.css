@@ -6,16 +6,34 @@
 }
 
 .projectPageBody {
-  padding: .5em;
+  padding: 1em;
   display: flex;
   width: 100%;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .projectContainer {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 13.5vh;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
 
+.projectIconImage{
+    width: auto;
+    height: 50px;
+}
+
+.linkText {
+  font-family: Arial, sans-serif;
+  width: 100px;
+  padding-bottom: 0px;
+  color: #333;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: none !important;
 }

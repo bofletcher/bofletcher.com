@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Draggable from 'react-draggable';
+// import Draggable from 'react-draggable';
 import styles from  './App.module.css';
 import Menu from './components/Menu/Menu';
 import Home from './components/Pages/Home/Home'
@@ -64,7 +64,7 @@ class App extends Component {
     <Router basename="/" >
         <div className={styles.Desktop}>
           <DesktopIcons openWindow ={this.windowOpen} />
-          <Draggable> 
+          {/* <Draggable>  */}
               <div className={attachedStyles.join(' ')}>
                 <div className={styles.windowTopbar}> {this.state.currentPage} <div onClick={this.windowClose} className={styles.closeBtn}>X</div></div>
                 <div className={styles.windowBody}>
@@ -77,7 +77,7 @@ class App extends Component {
                     </Switch>
                   </div>
                 </div>
-            </Draggable>
+            {/* </Draggable> */}
             <Menu open ={this.state.menuOpen} click={this.menuToggle}  openWindow ={this.windowOpen}/>
         </div>
     </Router>   
