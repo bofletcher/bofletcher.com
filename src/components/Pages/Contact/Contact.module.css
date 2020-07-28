@@ -6,6 +6,7 @@
 }
 
 .contactPageBody {
+  padding: .5em;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -15,4 +16,13 @@
 a{
   color: #333;
   text-decoration: none;
+}
+.contactLinkWrapper {
+  margin-top: 1em;
+}
+
+.contactLink {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1em;
 }

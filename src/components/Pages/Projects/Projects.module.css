@@ -8,8 +8,8 @@
 .projectPageBody {
   padding: 1em;
   display: flex;
+  flex-direction: row;
   width: 100%;
-  flex-direction: column;
 }
 
 .projectContainer {
@@ -21,6 +21,7 @@
   padding-left: 0px;
   cursor: pointer;
   box-sizing: border-box;
+  margin-right: 1em;
 }
 
 .projectIconImage{
@@ -36,4 +37,11 @@
   line-height: 18px;
   text-align: left;
   text-decoration: none !important;
+}
+
+.projectA {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
