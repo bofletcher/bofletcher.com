@@ -8,5 +8,6 @@
 
 .aboutMeTextContainer{
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  overflow: auto;
 }

@@ -9,6 +9,7 @@ import windowsAboutIcon from "../Menu/windows-about-icon.png"
 import windowsPhoneIcon from "../Menu/windows-phone-icon.png"
 
 
+
 function DesktopIcons(props) {
   return (
     <div className={styles.desktopIconsColumn}>
@@ -21,7 +22,7 @@ function DesktopIcons(props) {
         </div>
         </Link>
         <Link to="/resume">
-        <div onClick={()=> props.openWindow('RESUME')} className={styles.desktopIconWrapper}>
+        <div  onClick={()=> props.openWindow('RESUME')} className={styles.desktopIconWrapper}>
           <img className={styles.iconImage} src={windowsResumeIcon} alt="windows-phone-icon"/>
           <div className={styles.desktopIconLabel}>
             Resume
