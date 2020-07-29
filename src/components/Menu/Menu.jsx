@@ -102,8 +102,8 @@ const Menu = (props) => {
               
           </div>
           </Link>
-          <Link to="/">
-          <div onClick={props.openWindow} className={styles.startMenuOption}>
+          <Link>
+          <div className={styles.startMenuOption}>
               <img className={styles.windowsProjectIcon} src={windowsCDIcon} alt="windows-projects-icon"/>
               <div className={styles.startMenuOptionText}><span className={styles.underline}>H</span>ome</div>
               
