@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Resume.module.css";
-import BosResume from "../Resume/BoFletcher_Resume.docx"
+import BosResume from "../Resume/BoFletcher_Resume.pdf"
 import ResumePic from "../Resume/Resume Pic.png"
 
 
